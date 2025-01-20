@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <script src="/JavaScript/myScript.js"></script>
+    
+    <title>Home</title>
+</head>
+<body>
+
+    <!--creating a navigation bar -->
+<div class="outernav">
+    <nav>
+        <h2 class="logo"><a href="/index.html">kaal</a></h2>
+             <ul>
+                    <li><a href="/index.html" class="active">HOME</a></li>
+                    <li><a href="/HTML/blog.html">BLOG</a></li> 
+                    <li><a href="/HTML/shop.html">SHOP</a></li> 
+                    <li><a href="/HTML/research.html">RESEARCH</a></li> 
+                    <li><a href="/HTML/aboutus.html">ABOUT</a></li> 
+                    <li><a href="/HTML/contact.html">CONTACT</a></li> 
+            </ul>
+    </nav>
+</div>
+
+    <!--Home page-->
+
+<section class="home">
+    <div class="home-text">
+            <h3> Time to start!</h3>
+            <p>Explore the Ultimate luxury with KAAL watches.</p>
+            <a href="HTML/shop.html" class="nav_shop">Shop Now</a>
+    </div>
+</section>
+
+<!--Intro to page -->
+<section class="brief">
+    <h2> Why CHOOSE FROM KAAL PLATFORM? </h2>
+    <div class="brief-list">
+        <div class="list">
+            <h3>Exceptional Qaulity</h3>
+            <p>Permission Trademark Watches crafted with precision and passion.</p>
+        </div>
+        <div class="list">
+            <h3>Heavy Discount</h3>
+            <p>Quality watches with reasonable discount.</p>
+        </div>
+        <div class="list">
+            <h3>Limited</h3>
+            <p>Watches are only avaiable for a time period.</p>
+        </div>
+    </div>
+</section>
+
+<!--showcasing brand with quotes-->
+<div class="wow">
+    <!--inline for capitalization of required text-->
+    <div class="wow-text">
+        <h1 style="text-transform: capitalize;"> 
+            <a href="watches.html">find your perfect watch today!</a>
+            <style>
+                .wow-text a{
+                color: white;
+                padding-right: 80px;
+                transition: color 0.6s ease;
+            }
+            </style>
+        </h1>
+    </div>
+</div>
+
+
+<!--brand names-->
+<div class="top">
+    <h2>offical store</h2>
+</div>
+
+<div class="brand">
+    <div class="main_brand">
+
+        <div class="brand-name" style="padding-top: 0px;">
+            <img src="/Image/Rolex-Logo-1.png"> 
+        </div>
+        <div class="brand-name">
+            <img src="/Image/richard mille.jpg"> 
+        </div>
+        <div class="brand-name">
+            <img src="/Image/audemars-removebg-preview.png">
+        </div>
+        <div class="brand-name">
+            <img src="/Image/patek.png"> 
+        </div>
+
+    </div>
+</div>
+
+<body>
+    <h1 style="text-align: center; margin-top: 40px;">Products You May Like</h1>
+
+    <div class="product-section">
+        <!-- Product 1 -->
+        <div class="product">
+            <img src="/Image/65-01.avif" alt="Watch 1">
+            <h3>RM 65-01</h3>
+            <p style="color: rgb(121, 121, 4);">4.5/5</p>
+            <p>Price: $150</p>
+            <button class="toggle" onclick="toggleDetails('details1')">Detail</button>
+            <div class="details" id="details1">
+                A highly complex sports timepiece, a masterpiece of technical prowess designed for everyday use and for any situation, such is the latest execution of Richard Mille’s tireless quest for innovation,
+                the new RM 65-01.
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product">
+            <img src="/Image/pratik-prasad-ekD-UtzJn9M-unsplash.jpg" alt="Watch 2">
+            <h3>SPY- DWELLER</h3>
+            <p style="color: rgb(121, 121, 4);">4.5/5</p>
+            <p>Price: $200</p>
+            <button class="toggle" onclick="toggleDetails('details2')">Detail</button>
+            <div class="details" id="details2">
+                The Oyster Perpetual Sky‑Dweller was designed for those continually travelling the globe. Featuring our Saros annual calendar and Ring Command system, it simultaneously indicates two time zones, as well as the date and month, and allows them to be adjusted with one simple gesture
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product">
+            <img src="/Image/patek1.png" alt="Watch 3" style="height: 70%;">
+            <h3>6102P</h3>
+            <p style="color: rgb(121, 121, 4);">4.5/5</p>
+            <p>Price: $250</p>
+            <button class="toggle" onclick="toggleDetails('details3')">Detail</button>
+            <div class="details" id="details3">
+                This epitome of contemporary casual chic is attired in a bold khaki-green color adorning the dial and matching strap.
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<!--customer review-->
+<section class="C_review"> <!--customer_ review-->
+    <h2>What Our Customers Say</h2>
+    <div class="A_review"> <!--About_review-->
+        <p>"This store made finding my dream watch a breeze!"</p>
+    </div>
+    <div class="A_review">
+        <p>"Don't just tell time, make a statement!"</p>
+    </div>
+    <style>
+        .C_review{
+            padding: 48px 32px;
+            background: #ececec;
+            text-align: center;
+        }
+        .C_review h2{
+            font-size: 49px;
+            margin-bottom: 15px;
+        }
+        .C_review .A_review{
+            margin: 1px 0;
+            font-style: italic;
+            font-size: 23px;
+        }
+    </style>
+</section>
+
+<!--newsletter section-->
+<section class="newsletter">
+    <div class="newsletter-content">
+        <div class="newsletter-text">
+            <h2>Get On the List!</h2>
+            <p>Sign up with your email address to recieve updates.</p>
+        </div>
+
+        <form id="subscriptionForm">
+            <input type="email" placeholder="Your email" required>
+            <input type="submit" value="Subscribe" class="sub">
+        </form>
+        <script>
+            document.getElementById('subscriptionForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevents the form from reloading the page
+                alert('Thank you for subscribing!');
+            });
+        </script>
+    </div>
+</section>
+ 
+<!--footer-->
+<div class="main-footer">
+    <div class="heading-foot">
+        <div class="footerbody">
+    
+      <footer>
+
+        <div class="contact">
+          <p><strong>📍</strong> Singha Durbar, Kathmandu, Bagmati</p>
+          <p><strong>📧</strong> kaal@webdeveloper.com</p>
+        </div>
+    
+        <div class="links">
+            <a href="/index.html">HOME</a>
+            <a href="/HTML/blog.html">BLOG</a>
+            <a href="/HTML/shop.html">SHOP</a>
+            <a href="/HTML/research.html">RESEARCH</a>
+            <a href="/HTML/aboutus.html">ABOUT</a>
+            <a href="/HTML/contact.html">CONTACT</a>
+            
+        </div>
+    
+        <div class="copyright">
+          &copy; Kaal Creations 202, All Rights Reserved.
+        </div>
+    </footer>
+
+    </div>
+ </div>
+</body>
+</html>

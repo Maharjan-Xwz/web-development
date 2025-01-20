@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="/JavaScript/myScript.js"></script>
+    <title>About Us</title>
+</head>
+<body>
+    <!--nav bar-->
+    <div class="outernav">
+      <nav>
+          <h2 class="logo"><a href="/index.html">kaal</a></h2>
+               <ul>
+                      <li><a href="/index.html">HOME</a></li>
+                      <li><a href="/HTML/blog.html">BLOG</a></li> 
+                      <li><a href="/HTML/shop.html">SHOP</a></li> 
+                      <li><a href="/HTML/research.html">RESEARCH</a></li> 
+                      <li><a href="/HTML/aboutus.html" class="active">ABOUT</a></li> 
+                      <li><a href="/HTML/contact.html">CONTACT</a></li> 
+              </ul>
+      </nav>
+  </div>
+
+
+    <main class="about_us">  
+        <section id="about">
+          <h1>About Us</h1>
+          <p>We are a team of professionals with diverse backgrounds, passionate about delivering the best results.</p>
+    
+          <div class="team">
+            <!-- Person 1 -->
+            <div class="team-member">
+              <img src="/Image/Nischal.jpg" alt="Person 1">
+              <h3>Nischal Maharjan</h3>
+              <p>Lead Developer</p>
+              <a href="/Image/Web capture_16-1-2025_223510_.jpeg">View Portfolio</a>
+            </div>
+    
+            <!-- Person 2 -->
+            <div class="team-member">
+              <img src="/Image/nitisa.png" alt="Person 2">
+              <h3>Nitisha Bhusal</h3>
+              <p>UI/UX Designer</p>
+              <a href="/Image/Web capture_16-1-2025_221949_.jpeg">View Portfolio</a>
+            </div>
+    
+            <!-- Person 3 -->
+            <div class="team-member">
+              <img src="/Image/suvash shah.jpg" alt="Person 3">
+              <h3>suvash shah</h3>
+              <p>Project Manager</p>
+              <a href="/Image/Web capture_16-1-2025_222030_.jpeg">View Portfolio</a>
+            </div>
+    
+            <!-- Person 4 -->
+            <div class="team-member">
+              <img src="/Image/raghav khadka.jpg" alt="Person 4">
+              <h3>Raghav khadka</h3>
+              <p>Research Specialist</p>
+              <a href="/Image/IMG_20250114_111005_062.jpg">View Portfolio</a>
+            </div>
+
+            <div class="outerform">
+                <div class="feedback-form">
+                    <h2>Feedback Form</h2>
+            
+                    <form id="feedbackform">
+                        <label for="name">Your Name (optional):</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+            
+                        <label for="email">Your Email (optional):</label>
+                        <input type="email" id="email" name="email" placeholder="Your Email">
+            
+                        <label>Rate Our Team:</label>
+                        <div class="rating">
+                            <label><input type="radio" name="rating" value="1"> 1</label>
+                            <label><input type="radio" name="rating" value="2"> 2</label>
+                            <label><input type="radio" name="rating" value="3"> 3</label>
+                            <label><input type="radio" name="rating" value="4"> 4</label>
+                            <label><input type="radio" name="rating" value="5"> 5 (Excellent)</label>
+                        </div>
+            
+                        <label for="likes">What did you like about our team?</label>
+                        <textarea id="likes" name="likes" placeholder="Your comments" rows="4"></textarea>
+            
+                        <label for="suggestions">Any suggestions for improvement?</label>
+                        <textarea id="suggestions" name="suggestions" placeholder="Your suggestions" rows="4"></textarea>
+            
+                        <button type="button" onclick="submitfeedback()">Submit Feedback</button>
+                    </form>
+                    <div id="formMessage" style="display:none; color:green; margin-top:10px;"></div>
+                </div>
+            </div>
+           </div>
+      </section>
+      </main>
+
+      <!--footer-->
+<div class="main-footer">
+  <div class="heading-foot">
+      <div class="footerbody">
+  
+    <footer>
+
+      <div class="contact">
+        <p><strong>📍</strong> Singha Durbar, Kathmandu, Bagmati</p>
+        <p><strong>📧</strong> kaal@webdeveloper.com</p>
+      </div>
+  
+      <div class="links">
+          <a href="/index.html">HOME</a>
+          <a href="/HTML/blog.html">BLOG</a>
+          <a href="/HTML/shop.html">SHOP</a>
+          <a href="/HTML/research.html">RESEARCH</a>
+          <a href="/HTML/aboutus.html">ABOUT</a>
+          <a href="/HTML/contact.html">CONTACT</a>
+      </div>
+  
+      <div class="copyright">
+        &copy; Kaal Creations 202, All Rights Reserved.
+      </div>
+    </footer>
+   </div>
+
+  </div>
+</div>
+</body>
+</html>

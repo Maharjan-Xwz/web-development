@@ -1,0 +1,658 @@
+/*-------------------------------navigation-------------------------*/
+
+*{
+    margin: 0;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+nav{/*used flex box*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding-left: 10px;
+   padding-top: 15px;
+   padding-bottom: 20px;
+   height: 25px;
+   background-color: black;
+   z-index: 10;
+   
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: color 0.3 ease;
+}
+nav h2 a:hover{
+    color:white;
+}
+
+nav a:hover{
+    color:#4e54c8;
+}
+
+nav a::after{
+    content: '';
+    position: absolute;
+    background-color: #4e54c8;
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after{
+    width: max-content;
+}
+
+.logo a{
+    color: rgb(255, 255, 255);
+    font-weight: 800px;
+    font-size: 33px;
+    text-transform: uppercase; /*converting text into upper*/
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+
+
+li a{
+    color: white;
+    padding-right: 1;
+}
+
+ul li a.active {
+    color: #4e54c8;
+}
+li a:hover{
+    color: #4e54c8;
+}
+
+
+/*-------------------------main page------------------------------*/
+
+
+section{
+    padding: 90px 14% 70px;
+}
+.home{
+    padding: 0;
+    position: relative;
+    height: 70vh;
+    width: 100%;
+    background-image: url(/Image/watches\ show\ 1\ edit.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-text{
+    padding-top:60px;
+    color: white;
+}
+
+.home-text h3{
+    font-size: 89px;
+    margin-bottom: 20px;
+    margin: 0;
+}
+
+.home-text p{
+    padding: 0px 15px 15px;
+    font-size: 19px;
+    font-weight: 200px;
+}
+
+.nav_shop{
+    display: inline-block;
+    padding: 15px 30px;
+    margin-left: 15px;
+    color: white;
+    border: 2px solid white;
+    transition: all .6s;
+}
+
+.nav_shop:hover{
+    background-color: rgb(130, 131, 133);
+}
+
+.brief{
+    padding: 0px;
+    text-align: center;
+    background: #fff;
+}
+
+.brief h2{
+    font-size:  50px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.brief .brief-list{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 25px;   
+}
+
+.brief .brief-list h3 {
+    font-size: 25px;
+    padding-bottom: 11px;
+}
+
+.brief .brief-list p{
+    font-size: 19px;
+
+}
+
+
+.brief .list{
+
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #e7e7e7;
+    background-color: #ffffff;
+}
+
+.wow{
+    background-image: url(/Image/holding\ watch.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100dvi; /*what is dvi?*/ 
+    padding-left: 70px;
+
+}
+.wow-text{
+    text-align: center;
+    padding: 80px 0px 10px;
+    font-size: 40px;
+}
+
+ .wow-text h1{
+    transition:all 0.3s ease;
+ }
+ 
+ .wow-text h1:hover{
+    color: black;
+    
+ }
+
+.top h2{
+    padding: 0px 0px 15px 9px;
+    text-transform: capitalize;
+}
+ /*--------------------------------brands----------------------------------*/
+ .brand{
+    background: black;
+ }
+
+
+ .main_brand{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* align the content and item to center of main axis*/
+    align-content: center;
+
+ }
+
+ .brand-name img{
+    width: 100%;
+    height: 30%;
+ }
+
+/*--------------------------------------product u may like pic--------------------------*/
+.product-section {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.product {
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    max-width: 90%;
+    overflow: hidden;
+    
+}
+
+.product h3 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.product button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.product button:hover {
+    background-color: #45a049;
+}
+
+.details {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.product button.toggle {
+    background-color: #007BFF;
+}
+
+.product button.toggle:hover {
+    background-color: #0056b3;
+}
+
+.newsletter-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 28px;
+    background-color: black;
+    padding: 60px 70px;
+    
+}
+.newsletter-text h2{
+    color: white;
+    font-size: 40px;
+    font-weight: 800;
+}
+.newsletter-text p{
+    color: white;
+    font-size: 19px;
+}
+
+.newsletter-content form{
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+    gap: 16px;
+}
+
+.newsletter-content form input:first-child{
+    border: none;
+    outline: none;
+    padding: 15px;
+    background-color: honeydew;
+    border-radius: 5px;
+
+}
+
+.newsletter-content form input:last-child{
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+                        /*--------------------------About us---------------*/
+.about_us{
+    padding: 2rem 10%;
+  }
+
+  #about {
+    text-align: center;
+  }
+
+  #about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #about p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .team-member {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 300px;
+    text-align: center;
+  }
+
+  .team-member img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  .team-member h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .team-member p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .team-member a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  .outerform{
+    margin-top: 90px;
+    color: #333;
+}
+
+.feedback-form {
+    width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feedback-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.feedback-form textarea {
+    resize: none;
+}
+
+.feedback-form .rating {
+    margin-bottom: 15px;
+}
+
+.feedback-form .rating label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.feedback-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: #45a049;
+}
+                                           /*------------contact------------*/
+
+                                        .contact_main {
+                                            margin: 0;
+                                            padding: 0;
+                                            background-color: #f9f9f9;
+                                            color: #333;
+                                        }
+                                
+                                        .contact_header {
+                                        
+                                            color: white;
+                                            padding: 1rem 0;
+                                            text-align: center;
+                                        }
+                                
+                                        .contact_header h1 {
+                                            margin: 0;
+                                            font-size: 2rem;
+                                        }
+                                
+                                        .contact_box {
+                                            max-width: 600px;
+                                            margin: 20px auto;
+                                            padding: 20px;
+                                            background: white;
+                                            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                                        }
+                                
+                                        form {
+                                            display: flex;
+                                            flex-direction: column;
+                                        }
+                                
+                                        label {
+                                            margin-bottom: 5px;
+                                            font-weight: bold;
+                                        }
+                                
+                                        input, textarea, .contact_button {
+                                            margin-bottom: 15px;
+                                            padding: 10px;
+                                            border: 1px solid #ccc;
+                                            border-radius: 5px;
+                                            font-size: 1rem;
+                                        }
+                                
+                                        .contact_button {
+                                            background-color: #333;
+                                            color: white;
+                                            cursor: pointer;
+                                            transition: background-color 0.3s ease;
+                                        }
+                                
+                                        .contact_button:hover {
+                                            background-color: #555;
+                                        }
+                                
+                                        .message {
+                                            margin-top: 20px;
+                                            padding: 10px;
+                                            border-radius: 5px;
+                                            display: none;
+                                        }
+                                
+                                        .message.success {
+                                            background-color: #d4edda;
+                                            color: #155724;
+                                            border: 1px solid #c3e6cb;
+                                        }
+                                
+                                        .message.error {
+                                            background-color: #f8d7da;
+                                            color: #721c24;
+                                            border: 1px solid #f5c6cb;
+                                        }
+
+
+
+                                        /*#############--CV--##########33*/
+
+                                        .welcome {
+                                            color: white;
+                                            padding: 1rem 0;
+                                            text-align: center;
+                                        }
+                                        img{
+                                            border-radius: 30px;
+                                        }
+                                        .Cv{
+                                            max-width: 800px;
+                                            margin: 20px auto;
+                                            padding: 20px;
+                                            background: white;
+                                            border-radius: 5px;
+                                        }
+                                        h1, h2 {
+                                            color: #000000;
+                                        }
+                                        .download-cv {
+                                            display: block;
+                                            margin: 20px 0;
+                                            text-align: center;
+                                        }
+                                        .download-cv a {
+                                            text-decoration: none;
+                                            background: #007BFF;
+                                            color: white;
+                                            padding: 10px 20px;
+                                            border-radius: 5px;
+                                        }
+                                        .download-cv a:hover {
+                                            background: #0056b3;
+                                        }
+
+
+
+                                        /*###############------REsearchpage-----------######33*/
+                                        .container {
+                                            max-width: 1000px;
+                                            margin: 2rem auto;
+                                            padding: 1rem;
+                                            background: #fff;
+                                            border-radius: 10px;
+                                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                                        }
+                                        .image-section {
+                                            margin-bottom: 2rem;
+                                        }
+                                        .image-section img {
+                                            max-width: 100%;
+                                            height: auto;
+                                            border: 1px solid #ddd;
+                                            border-radius: 10px;
+                                            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                                            transition: transform 0.3s;
+                                        }
+                                        .image-section img:hover {
+                                            transform: scale(1.05);
+                                        }
+                                        .image-section p {
+                                            margin-top: 0.75rem;
+                                            font-size: 1rem;
+                                            color: #555;
+                                            text-align: center;
+                                        }
+                                        .research-section {
+                                            margin-top: 2rem;
+                                        }
+                                        .research-section h2 {
+                                            color: #4e54c8;
+                                            text-align: center;
+                                            font-size: 2rem;
+                                            margin-bottom: 1rem;
+                                        }
+                                        .research-section table {
+                                            width: 100%;
+                                            border-collapse: collapse;
+                                            margin-top: 1.5rem;
+                                            font-size: 1rem;
+                                        }
+                                        .research-section table th,
+                                        .research-section table td {
+                                            border: 1px solid #ddd;
+                                            padding: 1rem;
+                                            text-align: left;
+                                        }
+                                        .research-section table th {
+                                            background: #f4f4f4;
+                                            font-weight: bold;
+                                        }
+                                        .research-section table tr:hover {
+                                            background: #f9f9f9;
+                                        }
+/*--------------------------footer*--------------------------*/
+
+
+
+footer {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  footer h2 {
+    margin: 0 0 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  footer .contact {
+    margin: 20px 0;
+    font-size: 16px;
+  }
+
+  footer .contact p {
+    margin: 5px 0;
+  }
+
+  footer .links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    font-size: 16px;
+  }
+
+  footer .links a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+  }
+
+  footer .links a:hover {
+    color: #CCCCCC;
+  }
+
+  footer .copyright {
+    margin-top: 20px;
+    font-size: 14px;
+  }
